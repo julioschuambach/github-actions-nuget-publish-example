@@ -1,9 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<PackageId>HelloWorld</PackageId>
+		<Version>1.0.0</Version>
+		<License>MIT</License>
+		<Authors>Júlio E. Schuambach</Authors>
+		<Company>julioschuambach</Company>
+		<PackageDescription>Hello World!</PackageDescription>
+		<Description>Hello World!</Description>
+		<RepositoryUrl>https://github.com/julioschuambach/github-actions-nuget-publish-example</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/julioschuambach/github-actions-nuget-publish-example</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>HelloWorld</PackageTags>
+		<Title>HelloWorld</Title>
+		<Summary>Hello World!</Summary>
+	</PropertyGroup>
 
 </Project>
