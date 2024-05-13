@@ -1,0 +1,30 @@
+name: Test, Build, Pack and Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test_build_pack_publish:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@main
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Test
+      run: dotnet test
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Pack
+      run: dotnet pack --configuration Release
+
+    - name: Publish
+      run: dotnet nuget push "./HelloWorld/bin/Release/HelloWorld.1.0.0.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json
