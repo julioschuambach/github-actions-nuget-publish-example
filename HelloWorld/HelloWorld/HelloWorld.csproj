@@ -5,7 +5,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<PackageId>HelloWorld</PackageId>
+		<PackageId>julioschuambach_HelloWorld</PackageId>
 		<Version>1.0.0</Version>
 		<License>MIT</License>
 		<Authors>Júlio E. Schuambach</Authors>
